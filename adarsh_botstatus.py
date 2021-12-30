@@ -34,7 +34,7 @@ async def main_adarsh():
                         for ccc in zzz_adarsh:
                             bbb = ccc.message_id
                         if aaa == bbb:
-                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: 🅳︎🅴︎🅰︎🅳︎ ❌"
+                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: 🅓︎🅔︎🅐︎🅓︎ ❌"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down** ❌")
@@ -42,7 +42,7 @@ async def main_adarsh():
                                     pass
                             await app.read_history(bot)
                         else:
-                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: 🅰︎🅻︎🅸︎🆅︎🅴︎ ✅"
+                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: 🅐︎🅛︎🅘︎🅥︎🅔︎ ✅"
                             await app.read_history(bot)
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
