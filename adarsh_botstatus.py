@@ -24,7 +24,7 @@ async def main_adarsh():
                 GET_CHANNEL_OR_GROUP = await app.get_chat(int(CHANNEL_OR_GROUP_ID))
                 CHANNEL_OR_GROUP_NAME = GET_CHANNEL_OR_GROUP.title
                 CHANNEL_OR_GROUP_TYPE = GET_CHANNEL_OR_GROUP.type
-                xyz_adarsh = f"📊 **<u>LIVE BOT STATUS</u>**\n\n**💬 {CHANNEL_OR_GROUP_TYPE}**: {CHANNEL_OR_GROUP_NAME}🚥"
+                xyz_adarsh = f"🤖 **<u>🄱🄾🅃 🅂🅃🄰🅃🅄🅂</u>**"
                 for bot in BOT_LIST:
                     try:
                         yyy_adarsh = await app.send_message(bot, "/start")
@@ -34,7 +34,7 @@ async def main_adarsh():
                         for ccc in zzz_adarsh:
                             bbb = ccc.message_id
                         if aaa == bbb:
-                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: down 🔴"
+                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: 🅳︎🅴︎🅰︎🅳︎ ❌"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down** ❌")
@@ -42,15 +42,15 @@ async def main_adarsh():
                                     pass
                             await app.read_history(bot)
                         else:
-                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: Up 🟢"
+                            xyz_adarsh += f"\n\n🤖 **BOT**: @{bot}\n**STATUS**: 🅰︎🅻︎🅸︎🆅︎🅴︎ ✅"
                             await app.read_history(bot)
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xyz_adarsh += f"\n\n🔷 Last checked on: {last_update} ({TIME_ZONE})\n\n<i>🔄 List is Updated every 15 Mins - Powered by @CodeXMania \n Have a **Suggestion**  or want to report a **Bug**  \n  Contact at @CodeXManiasupport \n Bots Will Go Down From 12AM TO 6AM Everyday[DOESN'T APPLY TO FILE TO LINK BOTS]\n TO SAVE dynos AND REMOVE DISTRACTIONS FROM YOUR sleeping routine 💤 \n  **Heroku Limitations** \n  Consider **Donating** </i>"
+                xyz_adarsh += f"\n\n🚦 Last checked on: {last_update} ({TIME_ZONE})"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xyz_adarsh)
-                print(f"Last checked on: {last_update}🇮🇳")                
+                print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(900)
                         
 app.run(main_adarsh())
