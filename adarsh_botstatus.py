@@ -48,7 +48,7 @@ async def main_adarsh():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xyz_adarsh += f"\n\n🚦 Last checked on: {last_update} ({TIME_ZONE})"
+                xyz_adarsh += f"\n\n🚦 𝐔𝐏𝐃𝐀𝐓𝐄𝐃 𝐎𝐍: {last_update} ({TIME_ZONE})"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xyz_adarsh)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(900)
